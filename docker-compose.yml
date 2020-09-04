@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+
+# Email Service
+  email:
+    image: althaf1088/musollahemail
+    environment:
+      MAIL_USERNAME: musollahbooking@gmail.com
+      MAIL_PASSWORD: hemanth12
+
+    ports:
+      - 8000:5005
+
+    
+volumes:
+  data1:
