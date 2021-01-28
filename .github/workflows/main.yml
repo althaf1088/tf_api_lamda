@@ -28,7 +28,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER}}
-          key: ${{ secrets.KEY }}
+          key: ${{ secrets.SECRET_KEY}}
           source: "README.md"
           target: "."
 #       - name: SSH and SCP Setup
