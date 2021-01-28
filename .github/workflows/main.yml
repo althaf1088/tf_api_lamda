@@ -29,21 +29,21 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER}}
           key: ${{ secrets.SECRET_KEY}}
-          source: "README.md"
-          target: "."
-      - name: SSH Remote Commands
-  # You may pin to the exact commit or the version.
-  # uses: appleboy/ssh-action@1d1b21ca96111b1eb4c03c21c14ebb971d2200f6
-        uses: appleboy/ssh-action@v0.1.4
-        with:
-          # ssh host
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER}}
-          key: ${{ secrets.SECRET_KEY}}
-          script: |
-            whoami
-            ls -al
-            sudo systemctl restart authentication
+          source: "target/foodla-0.0.1-SNAPSHOT.jar"
+          target: "/tmp/"
+#       - name: SSH Remote Commands
+#   # You may pin to the exact commit or the version.
+#   # uses: appleboy/ssh-action@1d1b21ca96111b1eb4c03c21c14ebb971d2200f6
+#         uses: appleboy/ssh-action@v0.1.4
+#         with:
+#           # ssh host
+#           host: ${{ secrets.HOST }}
+#           username: ${{ secrets.USER}}
+#           key: ${{ secrets.SECRET_KEY}}
+#           script: |
+#             whoami
+#             ls -al
+#             sudo systemctl restart authentication
             
  
       
