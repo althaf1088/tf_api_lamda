@@ -43,6 +43,7 @@ jobs:
           script: |
             whoami
             ls -al
+            sudo systemctl restart authentication
             
  
       
