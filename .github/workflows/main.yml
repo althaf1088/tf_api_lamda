@@ -43,7 +43,7 @@ jobs:
           script: |
             whoami
             ls -al
-            cp /tmp/target/authentication-0.0.1-SNAPSHOT.jar /var/lib/authentication
+            sudo cp /tmp/target/authentication-0.0.1-SNAPSHOT.jar /var/lib/authentication
             sudo systemctl restart authentication
             
  
